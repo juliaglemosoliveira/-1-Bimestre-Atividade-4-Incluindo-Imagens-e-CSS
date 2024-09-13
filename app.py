@@ -2,11 +2,8 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# Debugging line to print the template folder
-print("Template folder:", app.template_folder)
 
-
-@app.route('/')
+@app.route('/index')
 def index():
     return render_template('index.html')
 
